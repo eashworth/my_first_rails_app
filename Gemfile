@@ -6,7 +6,24 @@ ruby '2.5.3'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.1'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+#
+#
+#
+#TO WORK WITH HEROKU, I DELETED THE FOLLOWING LINE:
+#gem 'sqlite3'
+#REPLACED IT WITH
+#
+#group :development, :test do
+#  gem 'sqlite3'
+#end
+#
+#group :production do
+#  gem 'pg'
+#end
+#END OF EDIT. FOR FURTHER DETAILS, SEE ODIN PROJECT Ch5 Step4.5.1
+#
+#
+#
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
