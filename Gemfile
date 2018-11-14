@@ -11,8 +11,7 @@ gem 'rails', '~> 5.2.1'
 #
 #TO WORK WITH HEROKU, I DELETED THE FOLLOWING LINE:
 #gem 'sqlite3'
-#REPLACED IT WITH
-#
+#AND REPLACED IT WITH
 #group :development, :test do
 #  gem 'sqlite3'
 #end
@@ -20,6 +19,13 @@ gem 'rails', '~> 5.2.1'
 #group :production do
 #  gem 'pg'
 #end
+group :development, :test do
+  gem 'sqlite3'
+end
+
+group :production do
+  gem 'pg'
+end
 #END OF EDIT. FOR FURTHER DETAILS, SEE ODIN PROJECT Ch5 Step4.5.1
 #
 #
